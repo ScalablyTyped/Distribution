@@ -1,6 +1,0 @@
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => typescript] 
-[warn ] PhaseRunner.scala:70 Failed because of, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => scala.js] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-plugin, phase => publish] 

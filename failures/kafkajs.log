@@ -1,6 +1,0 @@
-[error] PhaseRunner.scala:88 Failure, [kafkajs => InFile(/home/tso/tmp/tso-cache/npm/node_modules/kafkajs/types/index.d.ts): Parse error at 652.28 ''}'' expected but ':' found] [id => kafkajs, phase => typescript] 
-[warn ] PhaseRunner.scala:70 Failed because of, [kafkajs => InFile(/home/tso/tmp/tso-cache/npm/node_modules/kafkajs/types/index.d.ts): Parse error at 652.28 ''}'' expected but ':' found] [id => kafkajs, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [kafkajs => InFile(/home/tso/tmp/tso-cache/npm/node_modules/kafkajs/types/index.d.ts): Parse error at 652.28 ''}'' expected but ':' found] [id => kafkajs, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [kafkajs => InFile(/home/tso/tmp/tso-cache/npm/node_modules/kafkajs/types/index.d.ts): Parse error at 652.28 ''}'' expected but ':' found] [id => kafkajs, phase => scala.js] 
-[error] PhaseRunner.scala:88 Failure, [kafkajs => InFile(/home/tso/tmp/tso-cache/npm/node_modules/kafkajs/types/index.d.ts): Parse error at 652.28 ''}'' expected but ':' found] [id => kafkajs, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [kafkajs => InFile(/home/tso/tmp/tso-cache/npm/node_modules/kafkajs/types/index.d.ts): Parse error at 652.28 ''}'' expected but ':' found] [id => kafkajs, phase => publish] 

@@ -1,6 +1,0 @@
-[error] PhaseRunner.scala:88 Failure, [pixi.js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/pixi.js/pixi.js.d.ts): Parse error at 24088.31 ''>'' expected but ')' found] [id => pixi.js, phase => typescript] 
-[warn ] PhaseRunner.scala:70 Failed because of, [pixi.js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/pixi.js/pixi.js.d.ts): Parse error at 24088.31 ''>'' expected but ')' found] [id => pixi.js, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [pixi.js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/pixi.js/pixi.js.d.ts): Parse error at 24088.31 ''>'' expected but ')' found] [id => pixi.js, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [pixi.js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/pixi.js/pixi.js.d.ts): Parse error at 24088.31 ''>'' expected but ')' found] [id => pixi.js, phase => scala.js] 
-[error] PhaseRunner.scala:88 Failure, [pixi.js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/pixi.js/pixi.js.d.ts): Parse error at 24088.31 ''>'' expected but ')' found] [id => pixi.js, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [pixi.js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/pixi.js/pixi.js.d.ts): Parse error at 24088.31 ''>'' expected but ')' found] [id => pixi.js, phase => publish] 
